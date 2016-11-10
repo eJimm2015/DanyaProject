@@ -1,0 +1,351 @@
+﻿.boiteCol{
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    border: 1px solid #eee;
+
+}
+
+#fichier-para{
+	height: 532px;
+    border-radius: 13px;
+    border: solid #2196F3 2px;
+	}
+	
+	
+	
+	.text-primary{
+	    text-shadow: 1px 1px 6px;
+		border-bottom: solid 2px #3071a9;
+    border-top: solid 2px;
+    margin-top: -2px;
+    background-color: white;
+    padding-bottom: 5px;
+	}
+	
+	.image-imbr{
+	cursor:pointer;
+	}
+	
+	#popcoul{
+	position:absolute;
+	left:10px;
+	}
+	
+	#img-center,#img-right,#img-left{
+	cursor:hand;
+	color: rgba(128, 128, 128, 0.11);
+	}
+	#img-center:hover,#img-right:hover,#img-left:hover{
+	color:black;
+	}
+	#btn-download{
+	    cursor: hand;
+    height: 27px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 3px;
+	}
+	.b-col{
+	    height: 16px;
+	}
+	
+			  .f-control{
+	display: initial;
+    box-shadow: 1px 1px 1px;
+    border-radius: 3px;
+    padding-left: 23px;
+    margin: 10px;
+		  }
+		  
+		  .btn-group{
+		      margin: 0px;
+		  }
+		  .Item a{
+		  cursor:hand;
+		  }
+		  
+		  
+		       #titreInsertion ,#insertion{
+                                background-color:rgba(149, 254, 137, 0.75);
+                            }
+                            #style , #titreStyle{
+                               background-color:rgba(7, 255, 255, 0.11);
+                            }
+                            .titre{
+                                font-weight:bold;
+                                font-size:medium;
+                            }
+                            .nav-tabs > li.active > a,
+                .nav-tabs > li.active > a:hover,
+                .nav-tabs > li.active > a:focus {
+                  color: #555;
+                  cursor: default;
+                  background-color: rgba(252, 215, 215, 0.00);
+                  border: 1px solid #ddd;
+                  border-bottom-color: transparent;
+                }
+                       
+                	#page ul > li {
+                 font-family: Arial, sans-serif;
+                 font-size: 100%;
+                 color: black;
+                 display : list-item;
+                
+                  background-repeat: no-repeat;
+                 background-position: 0 0.32em;
+                
+                } 
+                
+                
+                
+               
+              
+                 #rien{
+                    list-style-image : url(3.png);
+					  }
+					  
+					  .btn{
+					  height:30px;
+					  }
+					  
+					  .set_14_viavi-buttons div:hover::after {
+    
+    width: 100px;
+}
+#bdy,#ws-cd{
+background:url("img/confectionary.png");
+overflow:auto;
+}
+
+#texteditor .btn{
+box-shadow: 0px 0 black;
+    border: solid 1px #9E9E9E;
+	padding: 7px;
+    height: 25px;
+}
+
+#texteditor .jqx-window-close-button-background{
+    right: 0px;
+    top: -1px;
+}
+#texteditor .jqx-window-header{
+position: relative;
+    width: 271px;
+    height: 0px;
+    cursor: n-resize;
+    margin: 0px;
+    padding: 6px;
+	color:transparent;
+}
+#texteditor .form-control{
+padding-left: 23px;
+	height: 23px;
+    padding-top: 0px;
+    padding-bottom: 0;
+    padding-right: 10px;
+	
+}
+#form-control{
+background-color:white;
+}
+#resiz{
+cursor:hand;
+color:rgba(128, 128, 128, 0.24);
+}
+#resiz:hover{
+color:black;
+}
+iframe{
+display:block;
+}
+#img-remove,#remove-iframe{
+cursor:hand;
+
+color:rgba(128, 128, 128, 0.24);
+}
+#img-remove:hover,#remove-iframe:hover{
+color:black;
+}
+
+#gallery { float: left; width: 65%; min-height: 12em; }
+                                                          .gallery.custom-state-active { background: #eee; }
+                                                          .gallery li { float: left; width: 120px; padding: 0.4em; margin: 0 0.4em 0.4em 0; text-align: center; }
+                                                          .gallery li h5 { margin: 0 0 0.4em; cursor: move; }
+                                                          .gallery li a { float: right; }
+                                                          .gallery li a.ui-icon-zoomin { float: left; }
+                                                          .gallery li img { width: 100%; cursor: move; }
+														  .ui-state-highlight { height: 1.5em; line-height: 1.2em; }
+			
+        .corp {
+		  cursor : move;
+		 
+		}			
+		#tabs { margin-top: 1em; }
+  .ui-icon-close { float: left; margin: 0.4em 0.2em 0 0; cursor: pointer; }
+
+  
+  	.table-content {
+    padding: 20px;
+}
+.remove {
+    margin-left: 10px;
+    color: red;
+	cursor: pointer;
+}
+.remove-col{
+cursor:hand;
+}
+[code='alerte'] remove-item{
+    color: rgba(228, 222, 222, 0.96);
+}
+
+.remove-item{
+    cursor: pointer;
+    color: rgba(255, 0, 0, 0.25);
+    position: relative;
+    left: 4px;
+    border: solid 2px;
+    border-radius: 50%;
+    padding-left: 2px;
+    width: 17px;
+   
+}
+.remove-item:hover{
+color:red;
+}
+.remove-post{
+  cursor: pointer;
+    background-color: #F9B5B5;
+    padding: 0;
+    position: relative;
+    font-weight: 800;
+    top: -3px;
+    right: 50px;
+    color: #9C3737;
+    border: solid #FD0101 1px;
+    border-radius: 55%;
+   
+}
+
+      .head{display:none; cursor :move;}
+      .panel-heading{cursor : move;}
+                                                              
+    #page { 
+	
+     padding: 25px;
+	
+     margin: auto;
+	background-color: white;
+    width: 930;
+    height: 550;
+    overflow: auto;
+    box-shadow: 5px 7px 10px;
+    border: solid 1px rgba(93, 91, 91, 0.64);
+	}
+      .head{display:none; cursor :move;}
+              .panel-heading{cursor : move;}
+                     
+	.cont img:hover{
+	cursor:hand;
+	}
+	.dropzone{
+	width: 400px;
+    border: solid #EAE4E4;
+    position: absolute;
+    right: 24px;
+	}
+#Mbody,#Mdownload-body p {
+cursor:hand;
+font-weight:bold;
+}
+#Mbody,#Mdownload-body p:hover  {
+color:blue;
+background-color:gray;
+}
+   #titreInsertion {
+   background-color:#DDFFE2;
+   }
+#insertion{
+                background-color:#DDFFE2;
+				height: 61px;
+				    top: -15px;
+    position: relative;
+            }
+			
+			 #titreStyle{
+			 background-color:whitesmoke;
+			 }
+            #style {
+                background-color:rgba(7, 255, 255, 0.11);
+				position: relative;
+    top: -15px;
+    height: 61px;
+            }
+            .titre{
+                font-weight:bold;
+                font-size:medium;
+                color:aqua;
+            }
+            .nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #555;
+  cursor: default;
+  background-color: rgba(252, 215, 215, 0.00);
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+}
+       
+	(#page) > ul > li {
+ font-family: Arial, sans-serif;
+ font-size: 100%;
+ color: black;
+ display : list-item;
+ 
+  background-repeat: no-repeat;
+ background-position: 0 0.32em;
+
+} 
+#page ul > li{
+list-style-image:url(img/puce-3.png);
+}
+
+.set_14_viavi-buttons i{
+line-height: 7px;
+}
+
+#ruban{
+
+    margin-left: 131px;
+    margin-right: 131px;
+	font-weight:bold;
+	color:white;
+     position: relative;
+   top: -90px;
+}
+#tabRub{
+    margin-bottom:-34px;
+}
+#ImgRub{
+    width:100%;height:70px;
+     
+}
+:not(#page) ul  li
+ {
+    list-style-image : url(img/3.png);
+}	
+
+
+#page strong{
+color:gray;
+}
+
+.Item [aria-selected="true"]{
+    position: relative;
+    top: -7px;
+    height: 38px;
+    margin-bottom: -8px;
+}

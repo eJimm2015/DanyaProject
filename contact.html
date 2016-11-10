@@ -1,0 +1,456 @@
+<html><head>
+    <title>Contact-us</title>
+    <meta charset="utf-8">
+	 <link rel="shortcut icon" href="icons/logo.png" type="image/x-icon"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="scripts/jquery-2.0.2.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="jqwidgets/styles/jqx.base.css" type="text/css">
+    <script type="text/javascript" src="scripts/demos.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxsplitter.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxpanel.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxtree.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxexpander.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxpanel.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxtabs.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxlistbox.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxdropdownlist.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxdropdownbutton.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxcolorpicker.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxwindow.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxeditor.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxtooltip.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxcheckbox.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxvalidator.js"></script>
+    <script type="text/javascript" src="jquery-ui.min.js"></script>
+    <script type="text/javascript" src="jquery-ui.js"></script>
+    <link rel="stylesheet" href="gardian/css/guardian.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="jqwidgets/jqxrating.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxcore.js"></script>
+    <link href="css/modern-business.css" rel="stylesheet">
+    <script src="gardian/js/jquery.guardian-1.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+                                
+                                                                       $("#editor").jqxEditor({
+                                                                    height: "200px",
+                                                                    width: '500px'
+                                                                });
+                                                                   
+                                                                 
+                                                                     $("#contact").guardian();          
+                                                                                    
+                                                                       
+                                                                   
+                                                                      $("#jqxRating").jqxRating({ width: 350, height: 35});
+                                                                      
+                                                                      $("#jqxRating").bind('change', function (event) {
+                                                                          $("#rate").html('<span>' + event.value + '</span');
+                                                                      });
+                                                        
+                                        
+                                                         
+                                                            });
+    </script>
+	<style>
+	
+	#img{
+		width:150px;
+		height:150px;
+		border: 4px solid gray;
+		box-shadow: black 0 2px 3px 2px;
+		margin-left:35px;
+		margin-bottom:10px;
+		}
+		#img:hover{
+		padding:2px;
+		border: 4px solid green;
+		
+		box-shadow: green 0 2px 6px;
+		}
+		#info-title{
+		background-color:green;
+		border-radius:25px;
+		text-align:center;
+		text-color:#00F1FF;
+		height:30px;
+		position:bottom;
+		
+		}
+		#info{
+		background-color:rgba(49, 112, 143, 0.52);;
+		border-radius:20px;
+		text-align:center;
+		text-color:black;
+		}
+		
+		#cadre{
+		border: 2px solid #CCC;
+		background-color:#D9EDF7;
+		padding:20px;
+		border-radius:30px;
+		margin-left:20px;
+		margin-right:20px;
+		margin-bottom:35px;
+		}
+		
+		#down:hover{
+		color:blue;
+		
+		}
+	#cadre{
+	    padding: 35px;
+	}
+	#img{
+	    margin: auto;
+		    margin-bottom: 18px;
+	}
+	</style>
+  </head><body>
+  
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <ul class="nav navbar-nav">
+        <li style="margin-right : 50px;">
+          <a class="navbar-brand" href="index.html" > <img src="img/oneclr.png"  style ="width:50px;height:50px ;float: left; top: -14px;position: relative;"/> Danya Project</a>
+        </li>
+        <li class="active">
+          <a href="index.html"><i class="fa fa-home" id="down" ></i> Accueil</a>
+        </li>
+        <li>
+         <a href="editeur.html"> <i class="fa fa-edit" id="down" ></i> Editeur DANYA</a>
+        </li>
+       
+      </ul>
+      <form class="navbar-form pull-right">
+        <input type="text" style="width : 150px" class="input-sm form-control" placeholder="Recherche" id="chanez" onfocus="document.getElementById('chanez').style.width ='600px';" onblur="document.getElementById('chanez').style.width ='150px';">
+        <button type="submit" class="btn btn-primary btn-sm">
+          <span class="-plus fa fa-eye fa-fw fa-lg hub text-inverse"></span>Chercher</button>
+      </form>
+    </nav>
+    <div class="section">
+      <div class="container">
+        <div class="row" style="heigth:400px;">
+          <div class="col-md-12">
+            <p>si vous-voulez nous contacter</p>
+            <div>
+              <button data-toggle="modal" href="#infos" class="btn btn-primary"> <i class="fa fa-envelope"  ></i>  Contactez-nous</button>
+              <div class="modal" id="infos" style="width:700;">
+                <div class="modal-dialog" style="width:590;">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">x</button>
+                      <h4 class="modal-title">Contactez-nous</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div style=" 
+  color: #ffffff;
+  heigth:50px;
+                                  
+  padding: 20px 5px 20px 4px;
+  background: #222;border-radius: 5px 5px 0px 0px;">
+                        <h1 class="text-center" style="">Contact</h1>
+                      </div>
+                      <br>
+                      <form id="contact" style="border: 1px solid #E5E5E5;
+  background: #FBFBFB;border-radius: 10px 10px 10px 10px;" class="text-left">
+                        <div>
+                          <label>Name
+                            <span class="red">*</span>
+                          </label>
+                          <input name="name" required="required" placeholder="Nom" id="nome" type="text">
+                        </div>
+                        <div>
+                          <label>Email
+                            <span class="red">*</span>
+                          </label>
+                          <input type="email" name="email" required="required" placeholder="E-mail" id="e-mail">
+                          <div>
+                            <div>
+                              <label>Titre
+                                <span class="red">*</span>
+                              </label>
+                              <input type="text" name="object" required="required" placeholder="Titre" id="titre">
+                              <br>
+                              <br>
+                              <br>
+                              <label>Message
+                                <span class="red">*</span>
+                              </label>
+                              <div style="width:500px; heigth:500px; padding:15px;">
+                                <textarea style="width:100%; heigth:100%;" id="editor" class="comment" type="text"></textarea>
+                              </div>
+                              <br>
+                            </div>
+                            <div class="element3">
+                              <label class="title"></label>
+                            </div>
+                            <div class="element4">
+                              <div id="jqxRating"></div>
+                              <label class="title">Rating</label>
+                              <div style="margin-top: 10px;"></div>
+                            </div>
+                            <div>
+                              <input type="submit" name="submit" value="Envoyer" id="envoyer" class="button" style="background-color:#222;">
+                            </div>
+                            <div class="submit"></div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="section">
+      <div class="container">
+	  <div class="row">
+		<!-- cadre0 :image+desc -->
+    <div class="col-xs-2 col-xs-push-2 container" id="cadre" resizable>
+	<!-- image -->
+		<div class="row">  
+			<img id="img" src="photo.png" class="img-circle">
+		</div>
+		<!-- description -->
+		<div class="row" >
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" >
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingsix" >
+      <h4 class="panel-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsesix" aria-expanded="true" aria-controls="collapsesix">
+	  <strong> <i class="fa fa-star-o" id="down" ></i> LEBIB Mohamed</strong>
+	  <i class="fa fa-angle-double-down" id="down" ></i>
+        <a >
+          
+        </a>
+      </h4>
+    </div>
+    <div id="collapsesix" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="headingsix">
+      <div class="panel-body">
+         
+		<strong><i class="fa fa-envelope" id="down" ></i> E-mail :</strong><p> em_labib@esi.dz</p>
+		<strong><i class="fa fa-facebook-square" id="down" ></i> Facebook :</strong><a href="https://web.facebook.com/e.jimm2015"> Mohamed Lebib</a>
+			
+      </div>
+    </div>
+  </div>
+</div>
+	    </div>
+
+    </div>
+	<!-- fin cadre0 -->
+	
+	<!-- içi le cadre1 de membre :image+description -->
+	<div class="col-xs-2 col-xs-push-2 container" id="cadre" >
+		<div class="row">
+			<img id="img" src="photo.png" class="img-circle">
+		</div>
+		<!-- la description -->
+		<div class="row" >
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" >
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne" >
+      <h4 class="panel-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+	  <strong>MOKHTARI Ichrak</strong>
+	  <i class="fa fa-angle-double-down" id="down" ></i>
+        <a >
+          
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+         
+			<strong><i class="fa fa-envelope" id="down" ></i> E-mail :</strong><p> ei_mokhtari@esi.dz</p>
+		    <strong><i class="fa fa-facebook-square" id="down" ></i> Facebook :</strong><a href="https://web.facebook.com/lili.susi.1">Ichrak Mkr</a>
+      </div>
+    </div>
+  </div>
+</div>
+	    </div>
+    </div>
+	<!-- fin de cadre1 -->
+	
+	
+	<!-- içi le cadre2 de membre :image+description -->
+	<div class="col-xs-2 col-xs-push-2 container" id="cadre" >
+		<div class="row">
+			<img id="img" src="photo.png" class="img-circle">
+		</div>
+		<!-- la description -->
+		<div class="row" >
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" >
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo" >
+      <h4 class="panel-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+	  <strong>AbdElAli MAHMOUDI</strong>
+	  <i class="fa fa-angle-double-down" id="down" ></i>
+        <a >
+          
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        
+		<strong><i class="fa fa-envelope" id="down" ></i> E-mail :</strong><p> ea_mahmoudi@esi.dz</p>
+		    <strong><i class="fa fa-facebook-square" id="down" ></i> Facebook :</strong><a href="https://web.facebook.com/profile.php?id=100006573723652">Fuhrer Herr Mahmudie </a>
+      </div>
+    </div>
+  </div>
+</div>
+	    </div>
+    </div>
+	<!-- fin de cadre2 -->
+	
+
+
+            </div>
+			
+			
+			<!------------------------------------------------------- LA DEUSIEME LIGNE ------------------------------------------------- -->
+			<!------------------------------------------------------- LA DEUSIEME LIGNE ------------------------------------------------- -->
+<div class="row">
+    		<!-- içi le cadre3 de membre :image+description -->
+	<div class="col-xs-2 col-xs-push-2 container" id="cadre" >
+		<div class="row">
+			<img id="img" src="photo.png" class="img-circle">
+		</div>
+		<!-- la description -->
+		<div class="row" >
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" >
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree" >
+      <h4 class="panel-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+	  <strong>Chanez AREZKI</strong>
+	 <i class="fa fa-angle-double-down" id="down" ></i>
+        <a >
+          
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+		<strong><i class="fa fa-envelope" id="down" ></i> E-mail :</strong><p> ec_arezki@esi.dz</p>
+		    <strong><i class="fa fa-facebook-square" id="down" ></i> Facebook :</strong><a href="https://web.facebook.com/profile.php?id=100009048813267">Chanez ikzera </a>
+      </div>
+    </div>
+  </div>
+</div>
+	    </div>
+    </div>
+	<!-- fin de cadre3 -->
+	
+	<!-- içi le cadre4 de membre :image+description -->
+	<div class="col-xs-2 col-xs-push-2 container" id="cadre" >
+		<div class="row">
+			<img id="img" src="photo.png" class="img-circle">
+		</div>
+		<!-- la description -->
+		<div class="row" >
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" >
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFOUR" >
+      <h4 class="panel-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFOUR" aria-expanded="true" aria-controls="collapseFOUR">
+	  <strong>Afaf KELAI</strong>
+	 <i class="fa fa-angle-double-down" id="down" ></i>
+        <a >
+          
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFOUR" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="headingFOUR">
+      <div class="panel-body">
+		<strong><i class="fa fa-envelope" id="down" ></i> E-mail :</strong><p> ea_kelai@esi.dz</p>
+		    <strong><i class="fa fa-facebook-square" id="down" ></i> Facebook :</strong><a href="https://web.facebook.com/cristy.agatha">Kelai Afaf </a>
+      </div>
+    </div>
+  </div>
+</div>
+	    </div>
+    </div>
+	<!-- fin de cadre4 -->
+	
+	
+	<!-- içi le cadre5 de membre :image+description -->
+	<div class="col-xs-2 col-xs-push-2 container" id="cadre" >
+		<div class="row">
+		<div  class="col-xs-2">
+			<img id="img" src="photo.png" class="img-circle">
+		</div>
+		</div>
+		<!-- la description -->
+		<div class="row" >
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" >
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingfive" >
+      <h4 class="panel-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
+	  <strong> Adel DJIDJIK </strong>
+	 <i class="fa fa-angle-double-down" id="down" ></i>
+        <a >
+          
+        </a>
+      </h4>
+    </div>
+    <div id="collapsefive" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="headingfive">
+      <div class="panel-body">
+        
+		<strong><i class="fa fa-envelope" id="down" ></i> E-mail :</strong><p> ea_djidjik@esi.dz</p>
+		    <strong><i class="fa fa-facebook-square" id="down" ></i> Facebook :</strong><a href="https://web.facebook.com/adel.the.best4ever">Adel Djidjik </a>
+      </div>
+    </div>
+  </div>
+</div>
+	    </div>
+    </div>
+	<!-- fin de cadre2 -->
+	
+</div>
+	  </div>
+    </div>
+    <footer class="section" style="background-color:#222; heigth:100%">
+      <div class="row">
+        <h1 class="text-center text-muted" style="color:white;">Suivez-nous</h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-6 text-center">
+            <div class="row">
+              <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left">
+                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+              </div>
+            </div>
+            <div class="section" style="background-color:#222;">
+              <a href="#"><i class="fa fa-4x fa-fw fa-youtube text-inverse"></i></a>
+              <a href="#"><i class="fa fa-4x fa-fw fa-twitter text-inverse"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100006573723652"><i class="fa fa-4x fa-facebook fa-fw text-inverse"></i></a>
+              <a href="#"><i class="fa fa-4x fa-fw hub text-inverse -plus fa-google-plus"></i></a>
+              <br>
+              <br>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+			
+
+</body></html>

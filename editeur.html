@@ -1,0 +1,1233 @@
+<html><head>
+    <title>Danya WYSIWYG Editeur</title>
+    <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 
+	 
+	<link rel="stylesheet" href="bootstrap.css" media="screen">
+	
+	<link rel="stylesheet" href="bootstrap.min.css" media="screen">
+	
+	<link rel="stylesheet" href="custom.min.css">
+	
+	 <link rel="shortcut icon" href="icons/logo.png" type="image/x-icon"> 
+   
+	<!-- <link href="assets/plugins/boostrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
+	  <!-- <link href="assets/css/custom.css" rel="stylesheet" type="text/css"> -->
+	  
+	  
+     <link href="assets/plugins/dropzone/css/dropzone.css" rel="stylesheet" type="text/css">
+ 
+     <!--<link href="style.css" rel="stylesheet" type="text/css"> -->
+	 <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="jqwidgets/styles/jqx.base.css" type="text/css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+	<link rel="stylesheet" href="btn_css/set_1.css">
+	<link rel="stylesheet" href="btn_css/set_2.css">
+	<link rel="stylesheet" href="btn_css/set_3.css">
+	<link rel="stylesheet" href="btn_css/set_4.css">
+	<link rel="stylesheet" href="btn_css/set_5.css">
+	<link rel="stylesheet" href="btn_css/set_6.css">
+	<link rel="stylesheet" href="btn_css/set_7.css">
+	<link rel="stylesheet" href="btn_css/set_8.css">
+	<link rel="stylesheet" href="btn_css/set_9.css">
+	<link rel="stylesheet" href="btn_css/set_10.css">
+	<link rel="stylesheet" href="btn_css/set_11.css">
+	<link rel="stylesheet" href="btn_css/set_12.css">
+	<link rel="stylesheet" href="btn_css/set_13.css">
+	<link rel="stylesheet" href="btn_css/set_14.css">
+	<link rel="stylesheet" href="btn_css/set_15.css">
+	
+	
+	<link rel="stylesheet" href="design.css">
+	
+	<link href="bootstrap-colorpicker-plus-master/dist/css/bootstrap-colorpicker.min.css" rel="stylesheet">
+	<link href="bootstrap-colorpicker-plus-master/dist/css/bootstrap-colorpicker-plus.css" rel="stylesheet">
+	
+	 <link href="slider\bxslider.css" rel="stylesheet">
+   <!--  <link href="style.css" rel="stylesheet" type="text/css"> -->
+	
+	
+	<script src="custom.js"></script>
+     <script src="assets/plugins/jquery-1.8.3.min.js" type="text/javascript"></script>
+     <script src="jquery-1.11.2.js" type="text/javascript"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/dropzone/dropzone.min.js" type="text/javascript"></script>
+	<script src="dropzone/dropzone.js" type="text/javascript"></script>
+	
+
+    
+    <script type="text/javascript" src="scripts/demos.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxsplitter.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxpanel.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxtree.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxexpander.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxpanel.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxtabs.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxlistbox.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxdropdownlist.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxdropdownbutton.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxcolorpicker.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxwindow.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxeditor.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxtooltip.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxcheckbox.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxvalidator.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxwindow.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxpopover.js"></script>
+    <script type="text/javascript" src="jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="jquery-ui/jquery-ui.js"></script>
+	               <!-- les biblio d' editeur -->
+	    <script type="text/javascript" src="Editeur/Manipulator.js"></script>
+		<script type="text/javascript" src="Editeur/edittabel.js"></script>
+		<script type="text/javascript" src="Editeur/edittabs.js"></script>
+		<script type="text/javascript" src="Editeur/editslides.js"></script>
+		<script type="text/javascript" src="Editeur/editpostes.js"></script>
+		<script type="text/javascript" src="Editeur/Liens.js"></script>
+		<script type="text/javascript" src="Editeur/gallery.js"></script>
+		<script type="text/javascript" src="Editeur/maquette.js"></script>
+		<script type="text/javascript" src="Editeur/appends.js"></script>
+        <script type="text/javascript" src="Editeur/edittext.js"></script>
+		<script type="text/javascript" src="Editeur/images.js"></script>
+        <script type="text/javascript" src="Editeur/conversion1.js"></script>
+        <script type="text/javascript" src="Editeur/telechargment.js"></script>
+        <script type="text/javascript" src="Editeur/editIframVideo.js"></script>
+        <script type="text/javascript" src="Editeur/colResizable-1.5.min.js"></script>
+        <script type="text/javascript" src="Editeur/conv.js"></script>
+        <script type="text/javascript" src="Editeur/design.js"></script>
+		
+
+      <script src="slider\bxslider.js"></script>
+   
+   
+    <script type="text/javascript" src="jqwidgets/jqxrating.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxcore.js"></script>
+	
+
+	
+  </head>
+  
+  <body id="bdy" style="background-color: #C7C7C7;" ">
+    
+    <!-- -->
+
+	
+	<img src="img/oneclr.png" id="c" style ="position:absolute; top:0px; "/>
+	<img src="img/onebw.png" id="bw" style ="position:absolute; top:73px; "/>
+	<div class="set_14_viavi-buttons" style ="position:absolute; top:103px; ">
+        <div class="Vdb" data-share="page acceuil" ><a href="index.html" > <i class="fa fa-home"></i> </a></div>
+        <!--End of Button 1 -->
+        <div class="Vtw" data-share="contact us"> <a  href="contact.html"><i class="fa fa-phone"></i> </a></div>
+        <!--End of Button 2 -->
+        <div class="Vin" data-share="aide" ><a  href="Help/PRJ3_ EQ29_Benhamida_Said_LHadj_ noticeUtilisation.pdf_2014.pdf" download> <i class="fa fa-info"></i> </a></div>
+        <!--End of Button 3 -->
+        
+      </div>
+	<div style="   border-radius: 15px;
+    background-color: #FFE6E6;
+    width: 167px;
+    position: fixed;
+    top: 4px;
+    right: 588px;
+    z-index: 12;
+    height: 41px;"class="set_5_button2" id="show-cod"><strong style="color:black"><div ><img src="img/code.png" style ="width:25px;height:25px"/>voir le Code D</div></strong></div>
+	
+	 <div id="ret" onmouseover="verif();" onclick="retour();" style ="position:fixed; top:0px;right:120px " class="set_12_icon-button twitter">
+	 <i class="fa fa-reply"></i><span></span></div>
+	 
+	 <div id="ret" onclick="avancer();" style ="position:fixed; top:0px;right:40px " class="set_12_icon-button linkedin">
+	 <i class="fa fa-share"></i><span></span></div>
+	 
+	 <div onclick="save();" style ="position:fixed; top:0px;right:80px " class="set_12_icon-button google-plus">
+	 <i class="gre fa fa-save"></i><span></span></div>
+	 
+	 <div onclick="barre();" style =" position: fixed; top: 6px;right: 224px;z-index: 4" class="set_12_icon-button google-plus">
+	 <i id="togle" class="gre fa fa-angle-double-up"></i><span></span></div>
+	
+	
+    <!--------------------------------------- les anglets des outils-------------------------------------------------->
+
+	<nav id="barre" style=" 
+	background-color:white;
+	    width: 926px;
+	        box-shadow: 1px 1px 4px;
+    background-color: transparent;
+    margin-left: 202px;
+    margin-right: 283px;
+	position:fixed;
+	top:0px;
+	z-index:3;
+">
+	<div >
+    <ul class="nav nav-tabs " style="background-color:rgba(255, 255, 255, 0.89);">
+      <li class="active" id="titreStyle">
+        <a href="#style" data-toggle="tab" style=" background-color:rgba(7, 255, 255, 0.11);"class="titre">style de text</a>
+      </li>
+      <li id="titreInsertion">
+        <a href="#insertion" data-toggle="tab" class="titre">Insertion</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane active" id="style">
+	  
+        <!-- contenue de anglet 01---------------------------------------------- -->
+        <div class="btn-group" data-toggle="buttons" style="padding:10px">
+				  <label class="btn btn-default ">
+					<input type="checkbox" autocomplete="off" checked="true" onclick="commande('bold');">
+					<i class="fa fa-bold"></i>
+				  </label>
+				  <label class="btn btn-default">
+					<input type="checkbox" autocomplete="off" onclick="commande('underline');">
+					<i class="fa fa-underline"></i>
+				  </label>
+				  <label class="btn btn-default">
+					<input type="checkbox" autocomplete="off" onclick="commande('italic');">
+					<i class="fa fa-italic"></i>
+				  </label>
+        </div>
+        <div class="btn-group" id="selecte" data-toggle="buttons">
+				  <label class="btn btn-default">
+					<input type="radio" name="options" id="option1" autocomplete="off" onclick="commande('justifyLeft');">
+					<i class="fa fa-align-left"></i>
+				  </label>
+				  <label class="btn btn-default">
+					<input type="radio" name="options" id="option2" autocomplete="off" onclick="commande('justifyCenter');">
+					<i class="fa fa-align-center"></i>
+				  </label>
+				  <label class="btn btn-default">
+					<input type="radio" name="options" id="option3" autocomplete="off" onclick="commande('justifyRight');">
+					<i class="fa fa-align-right"></i>
+				  </label>
+				  <label class="btn btn-default">
+					<input type="radio" name="options" id="option3" autocomplete="off" onclick="commande('justify');">
+					<i class="fa fa-align-justify"></i>
+				  </label>
+        </div>
+        <div class="btn-group" role="group" aria-label="...">
+          <div class="btn-group" role="group">
+            <button  type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             <img style="    float: left;    margin-right: 7px;    margin-top: -5px;" src="icons/color.png" >
+			 <span class="caret" style="    margin-top: 9px;"></span>
+            </button>
+			
+            <ul class="dropdown-menu">
+              <!-- ici les couleurs -->
+												
+		
+
+
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Standard</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">autre</a></li>
+    
+  </ul>
+
+
+  <div class="tab-content">
+    
+    <div role="tabpanel" class="tab-pane" id="profile">
+		<div id="couleur"></div>
+		
+        <button class="btn btn-danger" id="col" value="none">changer de couleur</button>
+      
+	</div>
+   <div role="tabpanel" class="tab-pane active" id="home">
+		<!-- boite couleurs -->
+
+	<div class="" style="top: 77px;left: 5px; display: table;">
+	<div class="colorpickerplus-container">
+	
+	<div class="colorpickerplus-colors-row">
+	<button class="boiteCol" style="background-color: rgb(91, 15, 0);"></button>
+	<button class="boiteCol" style="background-color: rgb(102, 0, 0);"></button>
+	<button class="boiteCol" style="background-color: rgb(120, 63, 4);"></button>
+	<button class="boiteCol" style="background-color: rgb(127, 96, 0);"></button>
+	<button class="boiteCol" style="background-color: rgb(39, 78, 19);"></button>
+	<button class="boiteCol" style="background-color: rgb(12, 52, 61);"></button>
+	<button class="boiteCol" style="background-color: rgb(28, 69, 135);"></button>
+	<button class="boiteCol" style="background-color: rgb(7, 55, 99);"></button>
+	
+	</div><div class="colorpickerplus-colors-row">
+	<button class="boiteCol" style="background-color: rgb(91, 15, 0);"></button>
+	<button class="boiteCol" style="background-color: rgb(102, 0, 0);"></button>
+	<button class="boiteCol" style="background-color: rgb(120, 63, 4);"></button>
+	<button class="boiteCol" style="background-color: rgb(127, 96, 0);"></button>
+	<button class="boiteCol" style="background-color: rgb(39, 78, 19);"></button>
+	<button class="boiteCol" style="background-color: rgb(12, 52, 61);"></button>
+	<button class="boiteCol" style="background-color: rgb(28, 69, 135);"></button>
+	<button class="boiteCol" style="background-color: rgb(7, 55, 99);"></button>
+	
+	</div><div class="colorpickerplus-colors-row">
+	<button class="boiteCol" style="background-color: rgb(133, 32, 12);"></button>
+	<button class="boiteCol" style="background-color: rgb(153, 0, 0);"></button>
+	<button class="boiteCol" style="background-color: rgb(180, 95, 6);"></button>
+	<button class="boiteCol" style="background-color: rgb(191, 144, 0);"></button>
+	<button class="boiteCol" style="background-color: rgb(56, 118, 29);"></button>
+	<button class="boiteCol" style="background-color: rgb(19, 79, 92);"></button>
+	<button class="boiteCol" style="background-color: rgb(17, 85, 204);"></button>
+	<button class="boiteCol" style="background-color: rgb(11, 83, 148);"></button>
+	
+	</div>
+	<div class="colorpickerplus-colors-row">
+	<button class="boiteCol" style="background-color: rgb(166, 28, 0);"></button>
+	<button class="boiteCol" style="background-color: rgb(204, 0, 0);"></button>
+	<button class="boiteCol" style="background-color: rgb(230, 145, 56);"></button>
+	<button class="boiteCol" style="background-color: rgb(241, 194, 50);"></button>
+	<button class="boiteCol" style="background-color: rgb(106, 168, 79);"></button>
+	<button class="boiteCol" style="background-color: rgb(69, 129, 142);"></button>
+	<button class="boiteCol" style="background-color: rgb(60, 120, 216);"></button>
+	<button class="boiteCol" style="background-color: rgb(61, 133, 198);"></button>
+	
+	</div>
+	<div class="colorpickerplus-colors-row">
+	<button class="boiteCol" style="background-color: rgb(204, 65, 37);"></button>
+	<button class="boiteCol" style="background-color: rgb(224, 102, 102);"></button>
+	<button class="boiteCol" style="background-color: rgb(246, 178, 107);"></button>
+	<button class="boiteCol" style="background-color: rgb(255, 217, 102);"></button>
+	<button class="boiteCol" style="background-color: rgb(147, 196, 125);"></button>
+	<button class="boiteCol" style="background-color: rgb(118, 165, 175);"></button>
+	<button class="boiteCol" style="background-color: rgb(109, 158, 235);"></button>
+	<button class="boiteCol" style="background-color: rgb(111, 168, 220);"></button>
+	
+	</div>
+	<div class="colorpickerplus-colors-row">
+	<button class="boiteCol" style="background-color: rgb(221, 126, 107);"></button>
+	<button class="boiteCol" style="background-color: rgb(234, 153, 153);"></button>
+	<button class="boiteCol" style="background-color: rgb(249, 203, 156);"></button>
+	<button class="boiteCol" style="background-color: rgb(255, 229, 153);"></button>
+	<button class="boiteCol" style="background-color: rgb(182, 215, 168);"></button>
+	<button class="boiteCol" style="background-color: rgb(162, 196, 201);"></button>
+	<button class="boiteCol" style="background-color: rgb(164, 194, 244);"></button>
+	<button class="boiteCol" style="background-color: rgb(159, 197, 232);"></button>
+	
+	</div>
+	<div class="colorpickerplus-colors-row">
+	<button class="boiteCol" style="background-color: rgb(230, 184, 175);"></button>
+	<button class="boiteCol" style="background-color: rgb(244, 204, 204);"></button>
+	<button class="boiteCol" style="background-color: rgb(252, 229, 205);"></button>
+	<button class="boiteCol" style="background-color: rgb(255, 242, 204);"></button>
+	<button class="boiteCol" style="background-color: rgb(217, 234, 211);"></button>
+	<button class="boiteCol" style="background-color: rgb(208, 224, 227);"></button>
+	<button class="boiteCol" style="background-color: rgb(201, 218, 248);"></button>
+	<button class="boiteCol" style="background-color: rgb(207, 226, 243);"></button>
+	
+	</div>
+	<div class="colorpickerplus-custom-colors"></div>
+	<div class="colorpickerplus-colors-row">
+	<button class="boiteCol" style="background-color: rgb(152, 0, 0);"></button>
+	<button class="boiteCol" style="background-color: rgb(255, 0, 0);"></button>
+	<button class="boiteCol" style="background-color: rgb(255, 153, 0);"></button>
+	<button class="boiteCol" style="background-color: rgb(255, 255, 0);"></button>
+	<button class="boiteCol" style="background-color: rgb(0, 255, 0);"></button>
+	<button class="boiteCol" style="background-color: rgb(0, 255, 255);"></button>
+	<button class="boiteCol" style="background-color: rgb(74, 134, 232);"></button>
+	<button class="boiteCol" style="background-color: rgb(0, 0, 255);"></button>
+	
+	</div>
+	<div class="colorpickerplus-colors-row">
+	<button class="boiteCol" style="background-color: rgb(0, 0, 0);"></button>
+	<button class="boiteCol" style="background-color: rgb(34, 34, 34);"></button>
+	<button class="boiteCol" style="background-color: rgb(68, 68, 68);"></button>
+	<button class="boiteCol" style="background-color: rgb(102, 102, 102);"></button>
+	<button class="boiteCol" style="background-color: rgb(136, 136, 136);"></button>
+	<button class="boiteCol" style="background-color: rgb(170, 170, 170);"></button>
+	<button class="boiteCol" style="background-color: rgb(204, 204, 204);"></button>
+	<button class="boiteCol" style="background-color: rgb(221, 221, 221);"></button>
+	
+	</div>
+	</div></div>
+
+<!-- fin boite couleur -->
+	
+	</div>
+												
+   <!-- fin des couleurs -->
+ 
+            </ul>
+			</div>
+			
+			
+			
+          </div>
+		  
+		  
+		  
+		  <!-- les titres -->
+          <div class="btn-group" role="group">
+            <select onchange="settitre(this.value) " class="form-control" style="display: initial;
+    box-shadow: 1px 1px 1px;
+    border-radius: 3px;
+    padding-left: 23px;
+	height:30px;    background-color: white;" >
+          
+          <option value="6"><h3>titre 1</h3></option>
+          <option value="5"><h2>titre 2</h2></option>
+          <option value="4"><h1>titre 3</h1></option>
+        </select>
+          </div>
+		  <!-- fin des titres -->
+
+		  
+		  <!-- taille du text -->
+		   <div class="btn-group" role="group">
+            <select onchange='document.execCommand("fontSize",false,this.value) ' class="form-control" style="display: initial;
+    box-shadow: 1px 1px 1px;
+    border-radius: 3px;
+    height:30px;    background-color: white;" >
+          <option value="1"> 1</option>
+          <option value="2"> 2</option>
+          <option value="3">3</option>
+          <option value="4"> 4</option>
+          <option value="5"> 5</option>
+          <option value="6"> 6</option>
+          <option value="7"> 7</option>
+        </select>
+          </div>
+		  <!-- fin taille du text -->
+         
+        
+        <div class="btn-group" role="group" aria-label="...">
+          <button type="button" class="btn btn-default" onclick="ajouter_num();">
+            <i class="fa fa-list-ol"></i>
+          </button>
+          
+            <button style="padding-top:2px;" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-list-ul"></i>
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li id="rien">
+                <a id="puce1" href="#" onclick="ajouter_puce();"><img src="img/puce-1.png">  puce 1</a>
+              </li>
+              <li id="rien">
+                <a id="puce2" href="#" onclick="ajouter_puce();"><img src="img/puce-2.png">  puce 2</a>
+              </li>
+              <li id="rien">
+                <a id="puce3" href="#" onclick="ajouter_puce();"><img src="img/puce-3.png">  puce 3</a>
+              </li>
+            </ul>
+         
+          <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="righht" id ="ins-colon" title="collones">
+            <i class="fa fa-columns"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="tab-pane" id="insertion">
+        
+       <!------------------------------ contenue de anglet ---- 02 ----------------------------------------------------------------------------------->
+        <div class="btn-group" role="group" aria-label="..." style="padding:10px">
+          <!-- <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="inserer un lien" onclick="setContent('createLink');">
+            <i class="fa fa-link"></i>
+          </button>
+          <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="supprimer le lien">
+            <i class="fa fa-unlink"></i>
+          </button> -->
+		  
+          <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="inserer un tableau" onclick="ajouter_tableau();">
+            <i class="fa fa-table"></i>
+          </button>
+          <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="inserer des Tabs" onclick="ajouter_tabs();">
+            <i class="fa fa-folder-o"></i>
+          </button>
+          
+		  <div class="btn-group" role="group">
+            <button style="padding-top:2px;" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+              <i class="fa fa-photo"></i>
+              <span class="fa fa-caret-down"></span>
+            </button>
+            <ul class="dropdown-menu" id="slide">
+              <li class="rien">
+                <a data-toggle="modal" id="fenetre-img" href="#"><i class="fa fa-file-photo-o"></i> image de la galerie</a>
+              </li>
+              <li class="rien">
+                <a data-toggle="modal" href="#img_url"><i  class="fa fa-link"></i> image a partir un site</a>
+              </li>
+            </ul>
+			</div>
+         
+		 <div class="btn-group" role="group">
+            <button style="padding-top:2px;" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-film"></i>
+              <span class="fa fa-caret-down"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li class="rien">
+                <a data-toggle="modal" href="#Myoutube"><i class="fa fa-youtube"></i>video youtube </a>
+              </li>
+              <li class="rien">
+                <a data-toggle="modal" id="Mvideo"><i class="fa fa-file-movie-o"></i>video de la galerie</a>
+              </li>
+            </ul>
+         </div>
+         
+		 <div class="btn-group" role="group">
+            <button style="padding-top:2px;" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" data-trigger="hover" title="inserer IFrame" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-list-alt"></i>
+              <span class="fa fa-caret-down"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li class="rien">
+                <a  data-toggle="modal" href="#infos" onclick="load();"><i class="fa fa-file-code-o"></i>une page web existante</a>
+				
+              </li>
+              <li class="rien">
+                <a data-toggle="modal" href="#Murl"><i class="fa fa-file-movie-o"></i>un autre site web </a>
+              </li>
+            </ul>
+			</div>
+         
+          <button type="button" class="btn btn-default"  data-toggle="modal" data-target="#Mdownload"  data-placement="top" data-trigger="hover" title="telecharger fichier" onclick="charger();">
+           <i class="fa fa-download"></i>
+          </button>
+        </div>
+		
+        <div class="btn-group" role="group">
+          <button style="padding-top:2px;" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="img/poste.png">Sections Specials
+            <span class="fa fa-chevron-down"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li class="rien">
+              <a href="#" onclick="ajouter_note();"><img src="img/alert.png"> note </a>
+            </li>
+            <li class="rien">
+              <a href="#" onclick="ajouter_alert();"><img src="img/note.png">alert </a>
+            </li>
+            <li class="rien">
+              <a href="#" onclick="ajouter_obs();"><img src="img/observation.png">obsevation </a>
+            </li>
+            <li class="rien">
+              <a href="#" onclick="ajouter_regle();"><img src="img/regle.png">regle </a>
+            </li>
+            <li class="rien">
+              <a href="#" onclick="ajouter_def();"><img src="img/def.png">definition </a>
+            </li>
+            <li class="rien">
+              <a href="#" onclick="ajouter_form();" ><img src="img/form.png">forme </a>
+            </li>
+          </ul>
+        </div>
+        <div class="btn-group" role="group" aria-label="..." style="padding:10px">
+          <button onclick="ajouter_poste();" type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="inserer un poste">
+            <img src="img/post.png">Post</button>
+        </div>
+        <div class="btn-group" role="group" aria-label="..." style="padding:10px">
+          <button onclick="ajouter_slide();"type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="inserer un slider">
+            <img src="img/slider.png">Slides</button>
+        </div>
+      </div>
+    </div>
+    </nav>
+    <!-- ---------------------------------fin de la barre d'outils--------------------------------/////////////////////////////////////////////////-->
+    <!-- -->
+
+    <div id="DIV1" style="width: 100%; height: 100%; margin-top: 97px;" >
+      <div id="editeur">
+        <div>
+          <div id="tools">
+            <div id="trs" style="   border: solid #2196F3 2px; border-radius: 10px;">
+			
+              <h5 class="text-center text-primary"><i class="fa fa-edit" ></i> Boite a outils</h5>
+			  
+			  <div class="jqx-splitter-collapse-button-vertical jqx-fill-state-pressed" style="width: 5px; height: 45px; position: relative; top: 50%; left: 0px; margin-top: -23px; margin-left: 0px;"></div>
+			  
+			  <!-- <button value="hide" onclick="hide1();"></button> -->
+              <div id="tooltree" style="border: none;    margin-top: -30px;">
+                <ul>
+                  <li>Texte
+                    <ul>
+                      <li>Titres
+                        <ul>
+                          <li class="item" id="rubanT" >Ruban
+                            <img style="float: left; margin-right: 5px;" src="icons/rubain.png">
+                          </li>
+                          <li class="item" id="titre1">titre1
+                            <img style="float: left; margin-right: 5px;" src="icons/titre.png">
+                          </li>
+						  <li class="item" id="titre2">titre2
+                            <img style="float: left; margin-right: 5px;" src="icons/titre.png">
+                          </li>
+						  <li class="item" id="titre3">titre3
+                            <img style="float: left; margin-right: 5px;" src="icons/titre.png">
+                          </li>
+                        </ul>
+                      </li>
+                      <li id="para" class="item">paragraphe
+                        <img style="float: left; margin-right: 5px;" src="icons/txt.png">
+                      </li>
+
+                      <li class="item" id="puces">puces
+                        <img style="float: left; margin-right: 5px;" src="icons/puce.png">
+                      </li>
+                      <li class="item" id="num">Numérotation
+                        <img style="float: left; margin-right: 5px;" src="icons/numerotation.png">
+                      </li>
+					</ul>
+                      
+                     
+                      
+                   
+                  </li>
+				  <li>Section speciale
+                        <ul>
+                          <li class="item" id="note">Note
+                            <img style="float: left; margin-right: 5px;" src="icons/note.png">
+                          </li>
+                          <li class="item" id="alerte">Alert
+                            <img style="float: left; margin-right: 5px;" src="icons/alert.png">
+                          </li>
+                          <li class="item" id="obs">Observation
+                            <img style="float: left; margin-right: 5px;" src="icons/observation.png">
+                          </li>
+                          <li class="item" id="regle">Regle
+                            <img style="float: left; margin-right: 5px;" src="icons/regle.png">
+                          </li>
+                          <li class="item" id="def">Deffinition
+                            <img style="float: left; margin-right: 5px;" src="icons/def.png">
+                          </li>
+                          <li class="item" id="form">Forme
+                            <img style="float: left; margin-right: 5px;" src="icons/form.png">
+                          </li>
+                        </ul>
+                      </li>
+                  <li>Composants
+                    <ul>
+					<li class="item" id ="images">images
+                        <img style="float: left; margin-right: 5px;" src="icons/image.png">
+                      </li>
+                      <li class="item" id ="postes">Postes
+                        <img style="float: left; margin-right: 5px;" src="icons/poste.png">
+                      </li>
+                      <li class="item" id ="slides">Slides
+                        <img style="float: left; margin-right: 5px;" src="icons/slides.png">
+                      </li>
+                      <li class="item" id ="tabs">tabs
+                        <img style="float: left; margin-right: 5px;" src="icons/tabs.png">
+                      </li>
+                      <li class="item" id = "tableau">Tableau
+                        <img style="float: left; margin-right: 5px;" src="icons/tableau.png">
+                      </li>
+                      <li class="item" id ="colonnes">Colonnes
+                        <img style="float: left; margin-right: 5px;" src="icons/coloumn.png">
+                      </li> 
+                      <!-- <li class="item" id="telechargement">téléchargement
+                        <img style="float: left; margin-right: 5px;" src="icons/download.png">
+                      </li> -->
+                    </ul>
+                  </li>
+                  <li>multimédia
+                    <ul>
+					
+                      <li class="item" id="IFrame">IFrame
+                        <img style="float: left; margin-right: 5px;" src="icons/video.png">
+                      </li>
+                      <li class="item" id="youtube">Youtube
+                        <img style="float: left; margin-right: 5px;" src="icons/youtube.png">
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+				
+
+		   <div>
+              <div id="ws-cd">
+                <div style="height: 600px;background-color: transparent; overflow:auto;" id="ws">
+                  <div id="page" contenteditable="false">
+				         
+				  </div>
+                </div>
+                <div>
+                  <div class="jqx-hideborder jqx-hidescrollbars" style=" left: 0px; top: 227px;width: 100%; height: 100%;"id="tabswidget">
+                    <ul>
+                      <li style="margin-left: 30px; ">Code en D</li>
+					 
+                     
+	  <div style="position: relative;
+    top: -28px;"class="set_14_viavi-buttons" id="copy">
+        <div class="Vfb" data-share="copier code" > <i class="fa fa-copy"></i> </div>
+        
+      </div>
+                    </ul>
+                    <div  id ="cod">
+					
+                     <!-- içi le code de conversion  -->
+                    </div> 
+					
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div id="fichier-para">
+            <div style=" overflow:auto;  left:1166px; height: 59.7744%;background-color:rgba(198, 237, 255, 0.388235);width:13.4811%;">
+			
+              <h5 class="text-center text-primary"><i class="fa fa-folder-open" ></i>insertion imbriquée</h5>
+
+			  <!-- <button onclick="load_gal_video();">charger videos</button> -->
+			  
+			
+			  <div id="myVideo">
+			  </div>
+			  	<div style="display:none" id="form-iframe" >
+				
+						<button class="set_15_social-button Vskype" id="youtube_i" ><i class="fa fa-youtube" ></i> </button>
+						<button class="set_15_social-button Vfacebook" id="ifram_i" ><i class="fa fa-list-alt" ></i></button>
+						<button class="set_15_social-button Vgoogle" id="download-togle"><i class="fa fa-cloud-download" ></i></button>
+						<button class="set_15_social-button Vdribbble" id="galeriy-togle"><i class="fa fa-image" ></i></button>
+						<button class="set_15_social-button Vdribbble" id="colo"><i class="fa fa-columns"></i></button>
+						<!-- <button id="ifram_i">insert iframe</button> -->
+					
+						
+				</div>
+				<div id="mes-images" style="display:none">
+					<div id="">
+					<div style="width: 100%; background-color: #CDDC39; margin-top: 10px; margin-bottom: 10; box-shadow: 0px 3px 7px white;
+									text-align: center; padding: 4px;"><strong><i class="fa fa-image" ></i> Galerie d'images</strong></div>
+
+						<a style="cursor: pointer;position: relative;left: 31px;margin-bottom: 5px;" class="btn btn-primary" id="up3"><i class="fa fa-upload" aria-hidden="true"></i>  Uploader</a>
+						<div id="upload3" style ="display:none;position: fixed;     top: 107px;; right: 406px;" >
+						<form action="" class="uploadform dropzone no-margin dz-clickable"></form>
+						</div>
+						</div>
+						  <div id="myImg" >
+									
+						  </div>
+			</div>
+			  <div id="download-body-i" style="display:none">
+			  <div style="width: 100%; background-color: #CDDC39; margin-top: 10px; margin-bottom: 10; box-shadow: 0px 3px 7px white;
+									text-align: center; padding: 4px;"><strong><i class="fa fa-cloud-download" ></i> Ajouter un telelechargement</strong></div>
+								<div class="btn-group" >
+                             <input type="radio" name="icon" value="petite" id="petite" autocomplete="off" checked>petit-icon
+                             <input type="radio" name="icon" value="grande" id="grande" autocomplete="off" >grande-icon
+							 </div>
+							 <br/>
+							  <div class="btn-group">
+							 <strong>choisir le mode protection:</strong>
+                             <input type="radio" name="mode" value="public"  id="public" checked>public
+                             <input type="radio" name="mode" value="protecte"  id="protecte" >protecté
+							</div>
+						<div id="download-galery" >
+
+						</div>							
+			  </div>
+			 
+            </div>
+            <div style="height: 38.9098%;">
+			
+              <h4 class="text-center text-primary"><i class="fa fa-cogs" aria-hidden="true"></i>   Paramètre</h4>
+			  <div  id="param" style="display:none" >
+			  width:<input id="w" type="text"></input>
+			  height:<input id="h" type="text"></input>
+			  
+			  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+    <div id="texteditor" >
+      <!-- debut text editor -->
+      <div>
+	  
+        
+	  
+      
+        <div class="btn-group" data-toggle="buttons" style="padding:0px">
+				  <label class="btn btn-default ">
+					<input type="checkbox" autocomplete="off" checked="true" onclick="commande('bold');">
+					<i class="fa fa-bold"></i>
+				  </label>
+				  <label class="btn btn-default">
+					<input type="checkbox" autocomplete="off" onclick="commande('underline');">
+					<i class="fa fa-underline"></i>
+				  </label>
+				  <label class="btn btn-default">
+					<input type="checkbox" autocomplete="off" onclick="commande('italic');">
+					<i class="fa fa-italic"></i>
+				  </label>
+        </div>
+        <div class="btn-group" id="selecte" data-toggle="buttons">
+				  <label class="btn btn-default">
+					<input type="radio" name="options" id="option1" autocomplete="off" onclick="commande('justifyLeft');">
+					<i class="fa fa-align-left"></i>
+				  </label>
+				  <label class="btn btn-default">
+					<input type="radio" name="options" id="option2" autocomplete="off" onclick="commande('justifyCenter');">
+					<i class="fa fa-align-center"></i>
+				  </label>
+				  <label class="btn btn-default">
+					<input type="radio" name="options" id="option3" autocomplete="off" onclick="commande('justifyRight');">
+					<i class="fa fa-align-right"></i>
+				  </label>
+        </div>
+		
+		<!-- btn coleurs -->
+        <div class="btn-group" role="group" aria-label="...">
+          <div class="btn-group" role="group">
+            <button id="color" type="button" class="btn btn-default " >
+             <img style="    float: left;    margin-right: 7px;    margin-top: -7px;height:20px;width:20px" src="icons/color.png">
+			 <span class="caret" style="    margin-top: 4px;"></span>
+            </button>
+
+			</div>
+          </div>
+		 <!-- fin btn couleurs -->
+		   <!-- taille du text -->
+		   <div class="btn-group" role="group">
+            <select onchange='document.execCommand("fontSize",false,this.value) ' class="form-control" style="display: initial;
+    box-shadow: 1px 1px 1px;
+    border-radius: 3px;
+    height:30px;    background-color: white;" >
+          <option value="1"> 1</option>
+          <option value="2"> 2</option>
+          <option value="3">3</option>
+          <option value="4"> 4</option>
+          <option value="5"> 5</option>
+          <option value="6"> 6</option>
+          <option value="7"> 7</option>
+        </select>
+          </div>
+		  <!-- fin taille du text -->
+		  
+		  
+		  
+		  
+		  
+		  
+         
+        
+        <div class="btn-group" role="group" aria-label="...">
+		
+          <button type="button" class="btn btn-default" onclick="commande('insertOrderedList');">
+            <i class="fa fa-list-ol"></i>
+          </button>
+		  
+		  <button type="button" class="btn btn-default" onclick="commande('insertUnorderedList');">
+            <i class="fa fa-list-ul"></i>
+          </button>
+		  
+          <button  id="colonnes" type="button" class="btn btn-default" data-toggle="tooltip" data-placement="righht" title="collones">
+            <i class="fa fa-columns"></i>
+          </button>
+        </div>
+   <label class="btn btn-default" id="lien">
+   <i class="fa fa-link"></i>
+   </label>
+   
+   <label onclick="commande('unlink');" class="btn btn-default" >
+   <i class="fa fa-unlink"></i>
+   </label>
+   
+   
+      </div>
+    </div> 
+	<!-- fin texteditor -->
+
+
+
+    <div id="popcoul" >
+	
+
+
+  
+
+ 
+    
+    
+  
+		<!-- boite couleurs -->
+
+
+	<div class="" style="top: 77px;left: 5px; display: table;">
+	<div class="colorpickerplus-container">
+	
+	<div class="colorpickerplus-colors-row">
+	<button class="b-col" style="background-color: rgb(91, 15, 0);"></button>
+	<button class="b-col" style="background-color: rgb(102, 0, 0);"></button>
+	<button class="b-col" style="background-color: rgb(120, 63, 4);"></button>
+	<button class="b-col" style="background-color: rgb(127, 96, 0);"></button>
+	<button class="b-col" style="background-color: rgb(39, 78, 19);"></button>
+	<button class="b-col" style="background-color: rgb(12, 52, 61);"></button>
+	<button class="b-col" style="background-color: rgb(28, 69, 135);"></button>
+	<button class="b-col" style="background-color: rgb(7, 55, 99);"></button>
+	
+	</div><div class="colorpickerplus-colors-row">
+	<button class="b-col" style="background-color: rgb(91, 15, 0);"></button>
+	<button class="b-col" style="background-color: rgb(102, 0, 0);"></button>
+	<button class="b-col" style="background-color: rgb(120, 63, 4);"></button>
+	<button class="b-col" style="background-color: rgb(127, 96, 0);"></button>
+	<button class="b-col" style="background-color: rgb(39, 78, 19);"></button>
+	<button class="b-col" style="background-color: rgb(12, 52, 61);"></button>
+	<button class="b-col" style="background-color: rgb(28, 69, 135);"></button>
+	<button class="b-col" style="background-color: rgb(7, 55, 99);"></button>
+	
+	</div><div class="colorpickerplus-colors-row">
+	<button class="b-col" style="background-color: rgb(133, 32, 12);"></button>
+	<button class="b-col" style="background-color: rgb(153, 0, 0);"></button>
+	<button class="b-col" style="background-color: rgb(180, 95, 6);"></button>
+	<button class="b-col" style="background-color: rgb(191, 144, 0);"></button>
+	<button class="b-col" style="background-color: rgb(56, 118, 29);"></button>
+	<button class="b-col" style="background-color: rgb(19, 79, 92);"></button>
+	<button class="b-col" style="background-color: rgb(17, 85, 204);"></button>
+	<button class="b-col" style="background-color: rgb(11, 83, 148);"></button>
+	
+	</div>
+	<div class="colorpickerplus-colors-row">
+	<button class="b-col" style="background-color: rgb(166, 28, 0);"></button>
+	<button class="b-col" style="background-color: rgb(204, 0, 0);"></button>
+	<button class="b-col" style="background-color: rgb(230, 145, 56);"></button>
+	<button class="b-col" style="background-color: rgb(241, 194, 50);"></button>
+	<button class="b-col" style="background-color: rgb(106, 168, 79);"></button>
+	<button class="b-col" style="background-color: rgb(69, 129, 142);"></button>
+	<button class="b-col" style="background-color: rgb(60, 120, 216);"></button>
+	<button class="b-col" style="background-color: rgb(61, 133, 198);"></button>
+	
+	</div>
+	<div class="colorpickerplus-colors-row">
+	<button class="b-col" style="background-color: rgb(204, 65, 37);"></button>
+	<button class="b-col" style="background-color: rgb(224, 102, 102);"></button>
+	<button class="b-col" style="background-color: rgb(246, 178, 107);"></button>
+	<button class="b-col" style="background-color: rgb(255, 217, 102);"></button>
+	<button class="b-col" style="background-color: rgb(147, 196, 125);"></button>
+	<button class="b-col" style="background-color: rgb(118, 165, 175);"></button>
+	<button class="b-col" style="background-color: rgb(109, 158, 235);"></button>
+	<button class="b-col" style="background-color: rgb(111, 168, 220);"></button>
+	
+	</div>
+	<div class="colorpickerplus-colors-row">
+	<button class="b-col" style="background-color: rgb(221, 126, 107);"></button>
+	<button class="b-col" style="background-color: rgb(234, 153, 153);"></button>
+	<button class="b-col" style="background-color: rgb(249, 203, 156);"></button>
+	<button class="b-col" style="background-color: rgb(255, 229, 153);"></button>
+	<button class="b-col" style="background-color: rgb(182, 215, 168);"></button>
+	<button class="b-col" style="background-color: rgb(162, 196, 201);"></button>
+	<button class="b-col" style="background-color: rgb(164, 194, 244);"></button>
+	<button class="b-col" style="background-color: rgb(159, 197, 232);"></button>
+	
+	</div>
+	<div class="colorpickerplus-colors-row">
+	<button class="b-col" style="background-color: rgb(230, 184, 175);"></button>
+	<button class="b-col" style="background-color: rgb(244, 204, 204);"></button>
+	<button class="b-col" style="background-color: rgb(252, 229, 205);"></button>
+	<button class="b-col" style="background-color: rgb(255, 242, 204);"></button>
+	<button class="b-col" style="background-color: rgb(217, 234, 211);"></button>
+	<button class="b-col" style="background-color: rgb(208, 224, 227);"></button>
+	<button class="b-col" style="background-color: rgb(201, 218, 248);"></button>
+	<button class="b-col" style="background-color: rgb(207, 226, 243);"></button>
+	
+	</div>
+	<div class="colorpickerplus-custom-colors"></div>
+	<div class="colorpickerplus-colors-row">
+	<button class="b-col" style="background-color: rgb(152, 0, 0);"></button>
+	<button class="b-col" style="background-color: rgb(255, 0, 0);"></button>
+	<button class="b-col" style="background-color: rgb(255, 153, 0);"></button>
+	<button class="b-col" style="background-color: rgb(255, 255, 0);"></button>
+	<button class="b-col" style="background-color: rgb(0, 255, 0);"></button>
+	<button class="b-col" style="background-color: rgb(0, 255, 255);"></button>
+	<button class="b-col" style="background-color: rgb(74, 134, 232);"></button>
+	<button class="b-col" style="background-color: rgb(0, 0, 255);"></button>
+	
+	</div>
+	<div class="colorpickerplus-colors-row">
+	<button class="b-col" style="background-color: rgb(0, 0, 0);"></button>
+	<button class="b-col" style="background-color: rgb(34, 34, 34);"></button>
+	<button class="b-col" style="background-color: rgb(68, 68, 68);"></button>
+	<button class="b-col" style="background-color: rgb(102, 102, 102);"></button>
+	<button class="b-col" style="background-color: rgb(136, 136, 136);"></button>
+	<button class="b-col" style="background-color: rgb(170, 170, 170);"></button>
+	<button class="b-col" style="background-color: rgb(204, 204, 204);"></button>
+	<button class="b-col" style="background-color: rgb(221, 221, 221);"></button>
+	
+	</div>
+	</div></div>
+
+<!-- fin boite couleur -->
+	
+	
+ 
+
+      
+     
+    
+    </div>
+	<!-- fin popcouleur -->
+	
+	
+    <div id="popcolonnes">
+      <div id="set_colonnes"></div>
+      <div>
+       <strong>nombre de colones: </strong>
+		<select onchange="colne();" style="width: 43px;" class="form-control" id="nb_col">
+          <option value="1"> 1</option>
+          <option value="2"> 2</option>
+          <option value="3">3</option>
+          <option value="4"> 4</option>
+          <option value="5"> 5</option>
+          <option value="6"> 6</option>
+          <option value="7"> 7</option>
+          <option value="8"> 8</option>
+          <option value="9"> 9</option>
+          <option value="10"> 10</option>
+        </select>
+
+        <strong>largeur de la colonne: </strong>
+		<select onchange="colne();" style="width: 43px;" class="form-control" id="px_col">
+          <option value="10"> 10</option>
+          <option value="20"> 20</option>
+          <option value="30">30</option>
+          <option value="40"> 40</option>
+          <option value="50"> 50</option>
+          <option value="60"> 60</option>
+          <option value="70"> 70</option>
+          <option value="80"> 80</option>
+          <option value="90">90</option>
+          <option value="100"> 100</option>
+        </select>
+       
+      </div>
+    </div>
+  <div id="dialog-gallerie" title="Mes images ">
+          <a style="cursor: pointer;" class="btn btn-primary" id="up"><i class="fa fa-upload" aria-hidden="true"></i>  Uploader</a>
+          <a class="btn btn-primary"  onclick="load();"><i class="fa fa-refresh" aria-hidden="true"></i>  Actualiser</a>
+          <div style="overflow:auto;">
+            <ul id="gallery" class="gallery ui-helper-reset ui-helper-clearfix"></ul>
+            <div id="upload" style ="display:none;" >
+              <form action="" class="uploadform dropzone no-margin dz-clickable"></form>
+            </div>
+          </div>
+        </div>
+		
+		<div id="dialog-edslide" title="Editeur des Slides">
+        <div>
+          <a class="btn btn-primary" id="adds"><i class="fa fa-plus-square" aria-hidden="true"></i>  Ajouter des images</a>
+          <div class="container">
+            <br>
+            <div class="row">
+              <div class="ui-widget ui-helper-clearfix" id="posts">
+                <ul  class="gallery ui-helper-reset ui-helper-clearfix poster"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	  <!-- image dialog -->
+	  <div id="dialog-img"  title="insertion d'images">
+        <div>
+		<a style="cursor: pointer;" class="btn btn-primary" id="up2"><i class="fa fa-upload" aria-hidden="true"></i>  Uploader</a>
+		 <a class="btn btn-primary"  onclick="load_gal_img();"><i class="fa fa-refresh" aria-hidden="true"></i>  Actualiser</a>
+       
+        <div id="upload2" style ="display:none;position: fixed;     top: 176px;; right: 406px;" >
+              <form action="" class="uploadform dropzone no-margin dz-clickable"></form>
+            </div>
+          <div class="container">
+            <br>
+            <div class="row">
+              <div class="ui-widget ui-helper-clearfix" >
+                <ul  class="images-ins ui-helper-reset ui-helper-clearfix poster"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	  
+<div id="dialog-edpostes" title="Editeur des Postes">
+        <div>
+          <a class="btn btn-primary" id="addp"><i class="fa fa-plus-square" aria-hidden="true"></i> ajouter des images</a>
+          <div class="container">
+            <br>
+            <div class="row">
+              <div class="ui-widget ui-helper-clearfix" id="posts">
+                <ul   class="gallery ui-helper-reset ui-helper-clearfix poster"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	  
+	  
+	   <div id="poplien">
+      <div class="jqx-hideborder jqx-hidescrollbars" id="lien_tabs">
+                    <ul>
+                      <li >Lien</li>
+					   <li>Lien nouvel onglet</li>
+                      <li>Scroll Spy</li>
+                    </ul>
+             
+            
+                   
+				
+            <div class="row">
+              <div class="form-group">
+              <label for="url" class="col-lg-2 control-label" >L'url : </label>
+              <div class="col-lg-6">
+              <input type="url" class="form-control" id="url" required>
+              </div>
+			  	  <button id="in"  class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-ok-sign"></span> appliquer</button>	
+          
+              </div>
+		  </div>
+		  <div class="row">
+              <div class="form-group">
+              <label for="url" class="col-lg-2 control-label" >L'url : </label>
+              <div class="col-lg-6">
+              <input type="url" class="form-control" id="url1" required>
+              </div>
+			  	  <button id="ino"  class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-ok-sign"></span>appliquer</button>	
+          
+              </div>
+		  </div>
+		  <div class="row">
+              <div class="form-group">
+                  <button id="selectitem"  class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-ok-sign"></span> Selectioner un item</button>	
+				    <div class="row" id="scroll_vis">
+					
+					</div>
+			  	  <button id="scroll"  class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-ok-sign"></span> appliquer</button>	
+          
+              </div>
+		  </div>
+            
+          
+                    
+	  
+     
+    </div>
+	</div>
+	
+	 <div id="dialog-vis" title="Visualisation de la page">
+        <div id ="vis" style="border-color:black;">
+          
+        </div>
+      </div>
+	  
+	  
+<!-- la fenetre modal des pages web existantes -->
+				<div class="modal fade" id="infos" role="dialog" style="width:100%; overflow:auto;">
+                <div class="modal-dialog" style="width:700px;">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" onclick="vider();">x</button>
+                       <h3>inserer une IFrame</h3>
+                    </div>
+                    <div class="modal-body" id="Mbody">
+					<strong>les fichiers existanats</strong>
+					</div>
+					</div>
+					</div>
+					</div>
+					<!-- fin de fenetre Modal des pages web --> 
+					
+					
+<!-- la fenetre modal insertion page web avec url  -->
+				<div id="Murl" class="modal fade"  role="dialog" style="width:100%;height:500px;">
+                <div class="modal-dialog" style="width:100%;">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" onclick="vider();">x</button>
+                       <h3>inserer une IFrame</h3>
+                    </div>
+                    <div class="modal-body" >
+					<form class="form-inline well">
+					<strong>entrez l'url de la pge içi:</strong>
+					<input type="text" name="url2" value="http://" class="form-control"> </input>
+                      <br /><br /> <strong>entrez une decription içi:</strong> <br />
+                        <input type="text" name="desc2"  class="form-control"> </input>
+                        <br /><input type="button" value="Ok" class="btn btn-default " onclick="insertIFram(url2.value,desc2.value);" data-dismiss="modal"> </input>
+					</form>
+					</div>
+					</div>
+					</div>
+					</div>
+<!-- fin fenetre modal insertion page web avec url -->
+
+<!-- la fenetre modal insertion video-youtube  -->
+				<div id="Myoutube" class="modal fade"  role="dialog" style="width:100%;height:500px;">
+                <div class="modal-dialog" style="width:100%;">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" onclick="vider();">x</button>
+					  <!-- image youtube -->
+					  <img src="img/youtube.png"   style="width: 100px;" />
+                       <h3>Video à partir youtube</h3>
+                    </div>
+                    <div class="modal-body" >
+					<form class="form-inline well">
+					<strong>entrez l'url du video içi:</strong><br />
+					<input type="text" name="url" value="http://" class="form-control"> </input>
+                        <br /><br /> <strong>entrez une decription içi:</strong><br />
+                        <input type="text" name="desc" class="form-control"> </input>
+					<input type="button" value="Ok" class="btn btn-default " onclick="insertYoutube(url.value, desc.value);" data-dismiss="modal" > </input>
+					</form>
+					</div>
+					</div>
+					</div>
+				</div>
+<!-- fin fenetre modal insertion video -youtube -->
+
+             
+			 
+			 					
+<!-- la fenetre modal insertion Image avec url  -->
+				<div id="img_url" class="modal fade"  role="dialog" style="width:100%;height:500px;">
+                <div class="modal-dialog" style="width:100%;">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" onclick="vider();">x</button>
+                       <h3>inserer une image</h3>
+                    </div>
+                    <div class="modal-body" >
+					<form class="form-inline well">
+					<strong>entrez l'url de l'mage' içi:</strong>
+					<input type="text" name="url_img" value="http://" class="form-control"> </input>
+                      <br /><br /> 
+                        <br /><input type="button" value="Ok" class="btn btn-default " onclick="image_link(url_img.value);" data-dismiss="modal"> </input>
+					</form>
+					</div>
+					</div>
+					</div>
+					</div>
+<!-- fin fenetre modal insertion Image avec url -->
+ <div id="dialog-ins_youtube" title="Insertion video youtube">
+        <div>
+         <input type="url" class="form-control" id="url_youtube" required>
+        </div>
+      </div>
+	  <!-- dialogue-ins iframe-int -->
+	    <div id="dialog-ins_iframe" title="Insertion video youtube">
+        <div>
+         <input type="url" class="form-control" id="url_iframe" required>
+        </div>
+      </div>
+	   <!-- dialogue ins colonnes -->
+	    <div id="dialog-ins_col" title="Insertion de colonnes">
+        <div>
+         <input type="number" value="4" min="1" step="1"  class="currency" id="nb_col" />
+        </div>
+      </div>
+	  <div id="dialog-ins_col-int" title="Insertion de colonnes">
+        <div>
+         <input type="number" value="4" min="1" step="1"  class="currency" id="nb_col" />
+        </div>
+      </div>
+	  
+</body>
+
+
+</html>
