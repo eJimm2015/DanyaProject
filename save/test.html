@@ -1,0 +1,245 @@
+<html><head>
+    <title>Danya WYSIWYG Iditor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="scripts/jquery-2.0.2.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="jqwidgets/styles/jqx.base.css" type="text/css">
+    <script type="text/javascript" src="scripts/demos.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxsplitter.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxpanel.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxtree.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxexpander.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxpanel.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxtabs.js"></script>
+    <script type="text/javascript" src="jquery-ui.min.js"></script>
+    <script type="text/javascript" src="jquery-ui.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+      $(document).ready(function () {
+                                                                    $('#splitter').jqxSplitter({
+                                                                        width: '100%',
+                                                                        height: '100%',
+                                                                        orientation: 'vertical',
+                                                                        panels: [
+                                                                           { size: "50%", min: "10%", collapsible: false },
+                                                                           { size: '50%', min: "5%"}]
+                                                                    });
+                                                               
+                                                                    $('#nested2').jqxSplitter({ width: "100%", height: "100%", panels: [
+                                                                        { size: 250}]
+                                                                    });
+                                                                    $('#nested1').jqxSplitter({ orientation: 'horizontal', width: "100%", height: "100%", panels: [
+                                                                        { size: 600}]
+                                                                    });
+                                                        $("#trs").jqxPanel({ width: "100%", height: "100%"
+                                                                                });
+                                                        
+                                                                
+                                                                    $('#tooltree').jqxTree({  height: '100%', width: '100%' });
+                                                        $("#page").draggable();
+                                                        $("#page").resizable();
+                                                                    $("#page").droppable({   
+                                                                            accept:".item",
+                                                                             drop: function(ev, ui)
+                                                                                 {
+                                                                                   if (ui.draggable.text() =='titre '){
+                                                                                   $("#page").append(ui.draggable.text()+",");
+                                                                                   }
+                                                                                   }
+                                                                    });                       
+                                                                    $(".item").draggable({helper:"clone" ,appendTo: "body"}  );
+                                                        $("#tabswidget").jqxTabs({  height: '100%', width: '100%' });
+                                                                });
+                                                      $("#ws").jqxPanel({ width: "100%", height: "100%"
+                                                                                });
+    </script>
+  </head><body id="bdy">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fichier <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Cree un nouveau projet</a>
+                </li>
+                <li>
+                  <a href="#">Ouvrire un projet existant</a>
+                </li>
+                <li>
+                  <a href="#">Sauvegarder</a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                  <a href="#">Enregistrer-Sous</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Aide <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Comment utiliser se editeur ?</a>
+                </li>
+                <li>
+                  <a href="#">Documentation sur le language D</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" id="about">A propos de nous</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+    <div id="DIV1" style="width: 100%; height: 150%;" class="section">
+      <div id="splitter">
+        <div>
+          <div id="nested2">
+            <div id="trs">
+              <h2 class="text-center text-primary">Boite a outils</h2>
+              <div style="border: none;" id="tooltree">
+                <ul>
+                  <li>Standard
+                    <ul>
+                      <li>Titres
+                        <ul>
+                          <li class="item">Rubain
+                            <img style="float: left; margin-right: 5px;" src="icons/rubain.png">
+                          </li>
+                          <li class="item">titre
+                            <img style="float: left; margin-right: 5px;" src="icons/titre.png">
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="item">text
+                        <img style="float: left; margin-right: 5px;" src="icons/txt.png">
+                      </li>
+                      <li class="item">paragraphe
+                        <img style="float: left; margin-right: 5px;" src="icons/para.png">
+                      </li>
+                      <li class="item">puces
+                        <img style="float: left; margin-right: 5px;" src="icons/puce.png">
+                      </li>
+                      <li class="item">Numérotation
+                        <img style="float: left; margin-right: 5px;" src="icons/numerotation.png">
+                      </li>
+                      <li>Section speciale
+                        <ul>
+                          <li class="item">Note
+                            <img style="float: left; margin-right: 5px;" src="icons/note.png">
+                          </li>
+                          <li class="item">Alert
+                            <img style="float: left; margin-right: 5px;" src="icons/alert.png">
+                          </li>
+                          <li class="item">Observation
+                            <img style="float: left; margin-right: 5px;" src="icons/observation.png">
+                          </li>
+                          <li class="item">Regle
+                            <img style="float: left; margin-right: 5px;" src="icons/regle.png">
+                          </li>
+                          <li class="item">Deffinition
+                            <img style="float: left; margin-right: 5px;" src="icons/def.png">
+                          </li>
+                          <li class="item">Forme
+                            <img style="float: left; margin-right: 5px;" src="icons/form.png">
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="item">Liens
+                        <img style="float: left; margin-right: 5px;" src="icons/lien.png">
+                      </li>
+                      <li class="item">images
+                        <img style="float: left; margin-right: 5px;" src="icons/image.png">
+                      </li>
+                    </ul>
+                  </li>
+                  <li>Avancer
+                    <ul>
+                      <li class="item">Postes
+                        <img style="float: left; margin-right: 5px;" src="icons/poste.png">
+                      </li>
+                      <li class="item">Slides
+                        <img style="float: left; margin-right: 5px;" src="icons/slides.png">
+                      </li>
+                      <li class="item">tabs
+                        <img style="float: left; margin-right: 5px;" src="icons/tabs.png">
+                      </li>
+                       <li class="item">Tableau
+                        <img style="float: left; margin-right: 5px;" src="icons/tableau.png">
+                      </li>
+                      <li class="item">Colonnes
+                        <img style="float: left; margin-right: 5px;" src="icons/coloumn.png">
+                      </li>
+                      <li class="item">téléchargement
+                        <img style="float: left; margin-right: 5px;" src="icons/download.png">
+                      </li>
+                    </ul>
+                  </li>
+                  <li>multimédia
+                    <ul>
+                      <li class="item">Video
+                        <img style="float: left; margin-right: 5px;" src="icons/video.png">
+                      </li>
+                      <li class="item">Youtube
+                        <img style="float: left; margin-right: 5px;" src="icons/youtube.png">
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div id="nested1">
+                <div style="background-color: grey" id="ws">
+                  <div id="page" style="background-color: white;width: 700; height: 700; box-shadow:10px 10px black;	"></div>
+                </div>
+                <div>
+                  <div class="jqx-hideborder jqx-hidescrollbars" id="tabswidget">
+                    <ul>
+                      <li style="margin-left: 30px; ">Code en D</li>
+                      <li>Messages</li>
+                    </ul>
+                    <div>
+                      <textarea style="width: 100%; height: 100%;"></textarea>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div id="nested1">
+            <div>
+              <h2 class="text-center text-primary">Vos fichiers</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+</body></html>
